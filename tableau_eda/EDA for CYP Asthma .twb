@@ -9,6 +9,7 @@
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
     <SheetIdentifierTracking />
     <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
@@ -960,36 +961,147 @@
       </connection>
       <aliases enabled='yes' />
       <column datatype='integer' name='[Associate Specialist Asthma Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Associate Specialist Repository Admissions per 100 Admissions]' role='measure' type='quantitative' />
       <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Emergency Asthma Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Emergency Medical Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Emergency Repository Admissions]' role='measure' type='quantitative' />
       <column datatype='integer' name='[FY1/2 - Staff Posts Per 100 Asthma Paediatric Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FY1/2 - Staff Posts Per 100 Repository Paediatric Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FY1/2 - Total Repository Staff Posts]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[FY1/2 - Unfilled Staff Posts in Repository Team]' role='measure' type='quantitative' />
+      <column datatype='real' name='[FY1/2 -Filled Respiratory Staff Posts]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Nurse Consultant Asthma Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Nurse Consultant Repository Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Paediatric Admissions]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Paediatric Asthma Admissions Per 1000 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Paediatric Consultant Asthma Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Paediatric Consultant Repository Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Paediatric Pharmacist Asthma Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Paediatric Pharmacist Repository Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Paediatric Psychologist Asthma Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Paediatric Psychologist Repository Admissions per 100 Admissions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Repository Admissions]' role='measure' type='quantitative' />
+      <column datatype='real' name='[ST1/2 - Unfilled Staff Posts in Repository Team]' role='measure' type='quantitative' />
+      <column datatype='real' name='[ST3+ - Unfilled Staff Posts in Repository Team]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Total Paediatric Beds For Asthma Patients]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Total Paediatric HDU Beds]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Total Paediatric ICU Beds]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Unfilled  Nurse Consultant Staff Posts]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Unfilled Asthma Nurse Consultant Staff Posts]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Unfilled Nurse Specialist Repository Staff Posts]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Unfilled Paediatric Consultant Staff Posts]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Unfilled Paediatric Pharmacist Staff Posts]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Unfilled Paediatric Psychologist Staff Posts]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Unfilled Staff Grade Staff Posts]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='cleaned_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_dataset.csv_9453B7F2519B49CC8FF9990756ACCC1F]' role='measure' type='quantitative' />
+      <column-instance column='[Emergency Asthma Admissions]' derivation='Count' name='[cnt:Emergency Asthma Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Emergency Asthma Admissions]' derivation='Median' name='[med:Emergency Asthma Admissions:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Associate Specialist Asthma Admissions per 100 Admissions]' derivation='Sum' name='[sum:Associate Specialist Asthma Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Associate Specialist Repository Admissions per 100 Admissions]' derivation='Sum' name='[sum:Associate Specialist Repository Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Emergency Asthma Admissions]' derivation='Sum' name='[sum:Emergency Asthma Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Emergency Medical Admissions]' derivation='Sum' name='[sum:Emergency Medical Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Emergency Repository Admissions]' derivation='Sum' name='[sum:Emergency Repository Admissions:qk]' pivot='key' type='quantitative' />
       <column-instance column='[FY1/2 - Staff Posts Per 100 Asthma Paediatric Admissions]' derivation='Sum' name='[sum:FY1/2 - Staff Posts Per 100 Asthma Paediatric Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FY1/2 - Staff Posts Per 100 Repository Paediatric Admissions]' derivation='Sum' name='[sum:FY1/2 - Staff Posts Per 100 Repository Paediatric Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FY1/2 - Total Repository Staff Posts]' derivation='Sum' name='[sum:FY1/2 - Total Repository Staff Posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FY1/2 - Unfilled Staff Posts in Repository Team]' derivation='Sum' name='[sum:FY1/2 - Unfilled Staff Posts in Repository Team:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FY1/2 -Filled Respiratory Staff Posts]' derivation='Sum' name='[sum:FY1/2 -Filled Respiratory Staff Posts:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Nurse Consultant Asthma Admissions per 100 Admissions]' derivation='Sum' name='[sum:Nurse Consultant Asthma Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Nurse Consultant Repository Admissions per 100 Admissions]' derivation='Sum' name='[sum:Nurse Consultant Repository Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Paediatric Admissions]' derivation='Sum' name='[sum:Paediatric Admissions:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Paediatric Asthma Admissions Per 1000 Admissions]' derivation='Sum' name='[sum:Paediatric Asthma Admissions Per 1000 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Paediatric Consultant Asthma Admissions per 100 Admissions]' derivation='Sum' name='[sum:Paediatric Consultant Asthma Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Paediatric Consultant Repository Admissions per 100 Admissions]' derivation='Sum' name='[sum:Paediatric Consultant Repository Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Paediatric Pharmacist Asthma Admissions per 100 Admissions]' derivation='Sum' name='[sum:Paediatric Pharmacist Asthma Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Paediatric Pharmacist Repository Admissions per 100 Admissions]' derivation='Sum' name='[sum:Paediatric Pharmacist Repository Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Paediatric Psychologist Asthma Admissions per 100 Admissions]' derivation='Sum' name='[sum:Paediatric Psychologist Asthma Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Paediatric Psychologist Repository Admissions per 100 Admissions]' derivation='Sum' name='[sum:Paediatric Psychologist Repository Admissions per 100 Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Repository Admissions]' derivation='Sum' name='[sum:Repository Admissions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ST1/2 - Unfilled Staff Posts in Repository Team]' derivation='Sum' name='[sum:ST1/2 - Unfilled Staff Posts in Repository Team:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ST3+ - Unfilled Staff Posts in Repository Team]' derivation='Sum' name='[sum:ST3+ - Unfilled Staff Posts in Repository Team:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Total Paediatric Beds For Asthma Patients]' derivation='Sum' name='[sum:Total Paediatric Beds For Asthma Patients:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Total Paediatric HDU Beds]' derivation='Sum' name='[sum:Total Paediatric HDU Beds:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Total Paediatric ICU Beds]' derivation='Sum' name='[sum:Total Paediatric ICU Beds:qk]' pivot='key' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <column-instance column='[Unfilled  Nurse Consultant Staff Posts]' derivation='Sum' name='[sum:Unfilled  Nurse Consultant Staff Posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Unfilled Asthma Nurse Consultant Staff Posts]' derivation='Sum' name='[sum:Unfilled Asthma Nurse Consultant Staff Posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Unfilled Nurse Specialist Repository Staff Posts]' derivation='Sum' name='[sum:Unfilled Nurse Specialist Repository Staff Posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Unfilled Paediatric Consultant Staff Posts]' derivation='Sum' name='[sum:Unfilled Paediatric Consultant Staff Posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Unfilled Paediatric Pharmacist Staff Posts]' derivation='Sum' name='[sum:Unfilled Paediatric Pharmacist Staff Posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Unfilled Paediatric Psychologist Staff Posts]' derivation='Sum' name='[sum:Unfilled Paediatric Psychologist Staff Posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Unfilled Staff Grade Staff Posts]' derivation='Sum' name='[sum:Unfilled Staff Grade Staff Posts:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='ordinal' measure-ordering='ordinal' show-structure='false' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Emergency Medical Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:ST3+ - Unfilled Staff Posts in Repository Team:qk]&quot;</bucket>
+            </map>
             <map to='#4e79a7'>
               <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Total Paediatric Beds For Asthma Patients:qk]&quot;</bucket>
             </map>
             <map to='#59a14f'>
               <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:FY1/2 - Staff Posts Per 100 Asthma Paediatric Admissions:qk]&quot;</bucket>
             </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled Paediatric Pharmacist Staff Posts:qk]&quot;</bucket>
+            </map>
             <map to='#76b7b2'>
               <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Associate Specialist Asthma Admissions per 100 Admissions:qk]&quot;</bucket>
             </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled Paediatric Consultant Staff Posts:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:FY1/2 -Filled Respiratory Staff Posts:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled Asthma Nurse Consultant Staff Posts:qk]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Psychologist Asthma Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Associate Specialist Repository Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
             <map to='#b07aa1'>
               <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Asthma Admissions Per 1000 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Pharmacist Asthma Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled Staff Grade Staff Posts:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:FY1/2 - Staff Posts Per 100 Repository Paediatric Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled Nurse Specialist Repository Staff Posts:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Consultant Asthma Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Pharmacist Repository Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Psychologist Repository Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:FY1/2 - Unfilled Staff Posts in Repository Team:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Repository Admissions:qk]&quot;</bucket>
             </map>
             <map to='#e15759'>
               <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Total Paediatric ICU Beds:qk]&quot;</bucket>
@@ -997,8 +1109,38 @@
             <map to='#edc948'>
               <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Nurse Consultant Asthma Admissions per 100 Admissions:qk]&quot;</bucket>
             </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled Paediatric Psychologist Staff Posts:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:FY1/2 - Total Repository Staff Posts:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[cnt:Emergency Asthma Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[med:Emergency Asthma Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Emergency Asthma Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Emergency Repository Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:ST1/2 - Unfilled Staff Posts in Repository Team:qk]&quot;</bucket>
+            </map>
             <map to='#f28e2b'>
               <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Total Paediatric HDU Beds:qk]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Consultant Repository Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Nurse Consultant Repository Admissions per 100 Admissions:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled  Nurse Consultant Staff Posts:qk]&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -1092,7 +1234,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run>A Horizontol Bar Chart  To Show Total Paedratric Bedsin the UK in 2018/2019</run>
+            <run>A Horizontol Bar Chart  To Show Total Paedratric Beds in the UK in 2018/2019</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1216,7 +1358,197 @@
       </table>
       <simple-id uuid='{3F34FD04-4600-4166-8131-28D0B871DB29}' />
     </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset' name='federated.1n4vzce0dn6c791aekms11qrg65r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1n4vzce0dn6c791aekms11qrg65r'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[FY1/2 - Unfilled Staff Posts in Repository Team]' role='measure' type='quantitative' />
+            <column datatype='real' name='[ST1/2 - Unfilled Staff Posts in Repository Team]' role='measure' type='quantitative' />
+            <column datatype='real' name='[ST3+ - Unfilled Staff Posts in Repository Team]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Unfilled  Nurse Consultant Staff Posts]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FY1/2 - Unfilled Staff Posts in Repository Team]' derivation='Sum' name='[sum:FY1/2 - Unfilled Staff Posts in Repository Team:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ST1/2 - Unfilled Staff Posts in Repository Team]' derivation='Sum' name='[sum:ST1/2 - Unfilled Staff Posts in Repository Team:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ST3+ - Unfilled Staff Posts in Repository Team]' derivation='Sum' name='[sum:ST3+ - Unfilled Staff Posts in Repository Team:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Unfilled  Nurse Consultant Staff Posts]' derivation='Sum' name='[sum:Unfilled  Nurse Consultant Staff Posts:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:FY1/2 - Unfilled Staff Posts in Repository Team:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:ST1/2 - Unfilled Staff Posts in Repository Team:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:ST3+ - Unfilled Staff Posts in Repository Team:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Unfilled  Nurse Consultant Staff Posts:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1n4vzce0dn6c791aekms11qrg65r].[Multiple Values]</rows>
+        <cols>([federated.1n4vzce0dn6c791aekms11qrg65r].[none:Country:nk] / [federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{B19BC57B-349E-43C2-A4AB-E2FD87867410}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Summary Statistics</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset' name='federated.1n4vzce0dn6c791aekms11qrg65r' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1n4vzce0dn6c791aekms11qrg65r'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Emergency Asthma Admissions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Emergency Medical Admissions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Emergency Repository Admissions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Paediatric Admissions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Repository Admissions]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Emergency Asthma Admissions]' derivation='Sum' name='[sum:Emergency Asthma Admissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Emergency Medical Admissions]' derivation='Sum' name='[sum:Emergency Medical Admissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Emergency Repository Admissions]' derivation='Sum' name='[sum:Emergency Repository Admissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Paediatric Admissions]' derivation='Sum' name='[sum:Paediatric Admissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Repository Admissions]' derivation='Sum' name='[sum:Repository Admissions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Emergency Asthma Admissions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Emergency Medical Admissions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Emergency Repository Admissions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Paediatric Admissions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Repository Admissions:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Repository Admissions:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1n4vzce0dn6c791aekms11qrg65r].[Multiple Values]</rows>
+        <cols>([federated.1n4vzce0dn6c791aekms11qrg65r].[none:Country:nk] / [federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{EFC57392-2626-441D-B89B-C343EF429214}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DB1ACEB8-3D4E-420A-B295-2AED92A9CD54}' />
+    </worksheet>
   </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{660F7330-A739-4F3A-A3A9-C72311EF0301}' />
+    </dashboard>
+    <dashboard name='Story 2' type='storyboard'>
+      <style />
+      <size maxheight='564' maxwidth='716' minheight='564' minwidth='716' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97164' id='1' param='vert' removable='false' type-v2='layout-flow' w='97766' x='1117' y='1418'>
+            <zone h='5851' id='3' type-v2='title' w='97766' x='1117' y='1418' />
+            <zone h='17908' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='97766' x='1117' y='7269' />
+            <zone h='73405' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='97766' x='1117' y='25177'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='Sheet 3' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{608F3B6D-9E23-4995-80E5-7676DA4A624D}' />
+    </dashboard>
+  </dashboards>
   <windows source-height='30'>
     <window class='worksheet' name='Frequency Table'>
       <cards>
@@ -1254,7 +1586,7 @@
       </viewpoint>
       <simple-id uuid='{591C0304-CE4A-49F1-A981-0DC62DD38BA1}' />
     </window>
-    <window class='worksheet' maximized='true' name='Bar Chart'>
+    <window class='worksheet' name='Bar Chart'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1290,6 +1622,122 @@
         </highlight>
       </viewpoint>
       <simple-id uuid='{49078963-C592-42E5-8188-C8F327C03E2A}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Country:nk]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Hospital Code:nk]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Trust Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4668DC8A-E783-49AF-8DA4-7BA332AEFBA8}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[:Measure Names]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[Multiple Values]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Country:nk]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Emergency Asthma Admissions (bin) 2:ok]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Emergency Asthma Admissions (bin):ok]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Paediatric HDU Present?:nk]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Paediatric ICU Present?:nk]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[none:Trust Name:nk]</field>
+            <field>[federated.1n4vzce0dn6c791aekms11qrg65r].[sum:Emergency Medical Admissions:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BC8BFC6A-374C-4BC9-827E-25DAD76566BB}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{CB925C1E-CFB3-47A4-A996-73418D6D6D51}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{455616D9-511F-4106-A1AC-B4D5C78341EB}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1B46C08D-D503-4BDE-A4D0-762DE6E9AEE4}' />
     </window>
   </windows>
   <thumbnails>
@@ -1441,6 +1889,288 @@
       pPp8vpv6G4vq2PBFsOu6ZDIZMpkMxWKRbDZLPp9nbm6Ozz//nJWVFVKpFIVCgXA4zM6dOzl9
       +jSrq6ucPXuWvr4+EokEpmkyPT3N/Pw8i4uLNDQ0bHTpQgH/C6zpUP5owjigAAAAAElFTkSu
       QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Story 2' width='192'>
+      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
+      9ZIAAAAASUVORK5CYII=
     </thumbnail>
   </thumbnails>
 </workbook>
